@@ -7,9 +7,6 @@ class person{
         this.age = age
     }
 
-    getName(){
-        return this.name
-    }
 }
 
 class Student extends person{
@@ -33,11 +30,15 @@ class Instructor extends person {
         super(name,age);
         this.salary = salary;
     }
+ 
+    get Salary(){
+        return this.salary
+    }
 
     assignCourse(course:Course){
       this.courses.push(course)
     }
-
+  
 }
 
 class Course {
